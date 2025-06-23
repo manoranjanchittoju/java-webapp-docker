@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://your-repo-url/java-webapp.git'
+                git 'https://github.com/manoranjanchittoju/java-webapp-docker.git'
             }
         }
 
