@@ -22,7 +22,6 @@ pipeline {
             steps {
                 script {
                     sh 'docker build -t java-webapp .'
-                    #sh 'docker rm -f java-webapp || true'
                     sh 'docker run -d -p 8081:8081 --name java-webapp java-webapp'
                 }
             }
